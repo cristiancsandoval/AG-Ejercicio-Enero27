@@ -19,7 +19,7 @@ const getLibros = async () => {
         console.log(titulo);
         contenedor.innerHTML += `
         <div class="card" style="width: 18rem;">
-        <img src="${urlImg}" class="card-img-top" alt="...">
+        <img src="${urlImg}" class="card-img-top img-fluid" alt="...">
         <div class="card-body">
           <h5 class="card-title">${titulo}</h5>
           <p class="card-text">${precio}</p>
