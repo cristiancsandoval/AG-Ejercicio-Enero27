@@ -80,8 +80,8 @@ main .librosContainer{
     background-color: lightgray;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
 
 }
