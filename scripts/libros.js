@@ -78,7 +78,7 @@ modificar.addEventListener("click",async () => {
 // Funciones de ayuda
 const captureData = () => {
   //recolectar datos
-  const titulo = document.getElementById("nombre").value;
+  const titulo = document.getElementById("titulo").value;
   const descripcion = document.getElementById("descripcion").value;
   const urlImg = document.getElementById("urlImg").value;
   const autor = document.getElementById("autor").value;
