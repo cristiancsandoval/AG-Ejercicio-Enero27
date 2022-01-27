@@ -16,7 +16,7 @@ const getLibros = async () => {
         <img src="${urlImg}" class="card-img-top img-fluid" alt="...">
         <div class="card-body">
           <h5 class="card-title">${titulo}</h5>
-          <p class="card-text">${precio}</p>
+          <p class="card-text"><span>$${precio}</span></p>
           <p class="card-text">${descripcion}</p>
           <a href="#" id=${id} class="btn btn-danger">Eliminar</a>
         </div>

@@ -19,13 +19,13 @@
       "id": "2"
     },
     {
-      "id": "3",
       "titulo": "PARAISO",
-      "urlImg": "img/3.jpg",
       "descripcion": "Una prosa poética, evocadora y fascinante, pero profundamente lúcida. Una historia perfecta sobre un mundo ya extinguido: el continente africano al borde del cambio. Una denuncia radical de la colonización europea, por uno de los escritores más brillantes y relevantes de la literatura africana. Constituye además, esta novela, una meditación conmovedora sobre la naturaleza de la libertad y la pérdida de la inocencia.",
+      "urlImg": "img/3.jpg",
       "autor": "ABDULRAZAK GURNAH",
       "editorial": "SALAMANDRA",
-      "precio": "59000"
+      "precio": "49000",
+      "id": "3"
     },
     {
       "titulo": "QUE HACER CON ESTOS PEDAZOS",
@@ -47,11 +47,11 @@
     },
     {
       "titulo": "EL ULTIMO GAMONAL",
-      "descripcion": "Magníficamente editadas, cuatro de las novelas del escritor vallecaucano, autor de Cóndores no entierran todos los días.",
+      "descripcion": "Magníficamente editadas, cuatro de las novelas del escritor vallecaucano, autor de Cóndores no entierran todos los días. Tenemos entonces: La tara del papa, El titiritero, Comandante Paraíso y El último gamonal.",
       "urlImg": "img/6.JPG",
       "autor": "GUSTAVO ALVAREZ GARDEAZABAL",
       "editorial": "UVALLE",
-      "precio": "34000",
+      "precio": "43000",
       "id": "6"
     },
     {

@@ -90,3 +90,25 @@ main .librosContainer .card {
     margin: 5px;
 }
 
+main .librosContainer .card:hover {
+    border: 1px solid #5E85FF;
+}
+
+main .librosContainer .card .card-text span {
+    background-color: #5E85FF;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    width: auto;
+    border-radius: 5px;
+}
+
+main .librosContainer .card .card-text:hover span {
+    color: #5E85FF;
+    background-color: white;
+    padding: 5px;
+    font-weight: bold;
+    width: auto;
+    border-radius: 5px;
+}
+
