@@ -78,12 +78,12 @@ modificar.addEventListener("click",async () => {
 // Funciones de ayuda
 const captureData = () => {
   //recolectar datos
-  const titulo = document.getElementById("nombre");
-  const descripcion = document.getElementById("descripcion");
-  const urlImg = document.getElementById("urlImg");
-  const autor = document.getElementById("autor");
-  const editorial = document.getElementById("editorial");
-  const precio = document.getElementById("precio");
+  const titulo = document.getElementById("nombre").value;
+  const descripcion = document.getElementById("descripcion").value;
+  const urlImg = document.getElementById("urlImg").value;
+  const autor = document.getElementById("autor").value;
+  const editorial = document.getElementById("editorial").value;
+  const precio = document.getElementById("precio").value;
   //Crear array
   let contenedor = { titulo, descripcion, urlImg, autor, editorial, precio };
   return contenedor;
