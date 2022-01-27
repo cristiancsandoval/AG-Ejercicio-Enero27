@@ -8,7 +8,14 @@ const getLibros = async () => {
         console.log('titulo', titulo);
     });
 }
-const addLibros = () => {}
+const addLibros = () => {
+    const nombre = document.getElementById("nombre")
+    const descripcion = document.getElementById("descripcion")
+    const url = document.getElementById("url")
+    const autor = document.getElementById("autor")
+    const editorial = document.getElementById("editorial")
+    const precio = document.getElementById("precio")
+}
 const removeLibro = () => {}
 const updateLibros = () => {}
 
