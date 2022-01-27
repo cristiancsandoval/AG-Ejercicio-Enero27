@@ -1,0 +1,12 @@
+/**DOCUMENTO GENERAL DE ESTILOS**/
+
+header{
+    background-color: #5E85FF;
+}
+
+header h1{
+    width: 100%;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+}
