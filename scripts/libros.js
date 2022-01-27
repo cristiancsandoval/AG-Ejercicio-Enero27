@@ -28,7 +28,7 @@ const getLibros = async () => {
 let buttonAdd = document.getElementById("agregar");
 
 const addLibro = async () => {
-  let libro = addLibros();
+  let libro = captureData();
   await fetch(endpoint, {
     method: "POST",
     body: JSON.stringify(libro),
@@ -50,12 +50,33 @@ container.addEventListener("click", async (evento) => {
   }
 });
 // modificar
-const updateLibros = () => {};
+const updateLibros = () => {
+    let id
+};
+let modificar = document.getElementById("modificar")
+modificar.addEventListener("click",async () => {
+    const datosIngresados = captureData();
+    const {url,nombre,correo,descripcion} = datosIngresados;
+    if(url ==="" , nombre === "", correo === "", descripcion === "" ) //Preguntar por las comas en el if
+    {
+        alert("Llenar todos los campos")
+    } else {
+        const id = document.getElementById("inputId").value;
+        console.log('dataMod', dataMod);
+        await fetch(endpoint+id,{
+            method:"PUT",
+            body : JSON.stringify(dataMod),
+            headers:{
+                "Content-Type" :"application/json; charset=utf-8"
+            }
+        })
+    }
+})
 
 // buscarPorTitulo
 
 // Funciones de ayuda
-const addLibros = () => {
+const captureData = () => {
   //recolectar datos
   const titulo = document.getElementById("nombre");
   const descripcion = document.getElementById("descripcion");
