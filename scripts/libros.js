@@ -2,15 +2,6 @@ import {url as endpoint} from "../api/url.js"
 
 
 let contenedor = document.getElementById("libros")
-const addLibro = async () => {
-    let libro = addLibros()
-    await fetch(endpoint, { 
-    method: 'POST',
-    body: JSON.stringify(libro),
-    headers: {
-        "Content-Type" : "application/json; charset=utf-8"
-    }
-})}
 const getLibros = async () => {
     const data = await fetch(endpoint);
     const libros = await data.json();
@@ -30,7 +21,22 @@ const getLibros = async () => {
         `
     });
 }
+//post
+let buttonAdd = document.getElementById("agregar");
+buttonAdd.addEventListener("click",addLibro)
+
+const addLibro = async () => {
+    let libro = addLibros()
+    await fetch(endpoint, { 
+    method: 'POST',
+    body: JSON.stringify(libro),
+    headers: {
+        "Content-Type" : "application/json; charset=utf-8"
+    }
+})}
+
 let container = document.querySelector(".librosContainer")
+//Delete
 container.addEventListener("click", async (evento)=>{
     const btnEliminar = evento.target.classList.contains("btn-danger");
     if(btnEliminar === true){
@@ -41,14 +47,13 @@ container.addEventListener("click", async (evento)=>{
             
         }
 })
+// modificar
+const updateLibros = () => {};
+
+// buscarPorTitulo
 
 
-
-let buttonAdd = document.getElementById("agregar");
-buttonAdd.addEventListener("click",addLibro)
-
-
-
+// Funciones de ayuda
 const addLibros = () => {
     //recolectar datos
     const titulo = document.getElementById("nombre")
@@ -62,12 +67,15 @@ const addLibros = () => {
     return contenedor;
 }
 
-const removeLibro = () => {
-    let booleano = document.querySelector(".btn-danger")
-}
 
 
-const updateLibros = () => {}
+
+
+
+
+
+
+
 
 
 
