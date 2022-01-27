@@ -11,10 +11,12 @@ const addLibro = async () => {
         "Content-Type" : "application/json; charset=utf-8"
     }
 })}
+
 const getLibros = async () => {
     const data = await fetch(endpoint);
     const libros = await data.json();
     libros.forEach(libro => {
+
         const {titulo,urlImg,descripcion,precio} = libro;
         console.log(titulo);
         contenedor.innerHTML += `
@@ -46,9 +48,8 @@ export const addLibros = () => {
     let contenedor = {nombre,descripcion,urlImg,autor,editorial,precio};
     return contenedor;
 }
+
 const removeLibro = () => {}
 const updateLibros = () => {}
-
-
 
 document.addEventListener("DOMContentLoaded",getLibros);

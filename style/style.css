@@ -86,3 +86,7 @@ main .librosContainer{
 
 }
 
+main .librosContainer .card {
+    margin: 5px;
+}
+
