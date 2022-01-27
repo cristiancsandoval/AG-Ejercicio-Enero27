@@ -1,13 +1,13 @@
 {
   "users": [
     {
-      "id": "1",
       "titulo": "LOS SUICIDAS DEL FIN DEL MUNDO",
+      "descripcion": "A fines de los años noventa, una ola de suicidios conmovió a Las Heras, un pequeño pueblo petrolero de la provincia de Santa Cruz. La mayoría de los muertos tenía alrededor de veinticinco años y eran habitantes emblemáticos de la ciudad, hijos de familias modestas pero tradicionales. Sin embargo, la lista oficial de esos suicidios nunca fue confeccionada. ",
       "urlImg": "img/1.jpg",
-      "descripcion": "A fines de los años noventa, una ola de suicidios conmovió a Las Heras, un pequeño pueblo petrolero de la provincia de Santa Cruz. La mayoría de los muertos tenía alrededor de veinticinco años y eran habitantes emblemáticos de la ciudad, hijos de familias modestas pero tradicionales. Sin embargo, la lista oficial de esos suicidios nunca fue confeccionada. Leila Guerriero viajó a este desolado paraje de la Patagonia, habló con los familiares y amigos de los suicidas, recorrió las mismas calles y visitó cada rincón del pueblo. El resultado es este relato descarnado y preciso que no solo reconstruye los episodios trágicos de esos años sino que también pinta magníficamente la vida cotidiana de una comunidad alejada de las grandes ciudades.",
       "autor": "LEILA GUERRIERO",
       "editorial": "TUSQUETS",
-      "precio": "55000"
+      "precio": "55000",
+      "id": "1"
     },
     {
       "id": "2",
@@ -46,13 +46,13 @@
       "precio": "38000"
     },
     {
-      "id": "6",
       "titulo": "EL ULTIMO GAMONAL",
+      "descripcion": "Magníficamente editadas, cuatro de las novelas del escritor vallecaucano, autor de Cóndores no entierran todos los días.",
       "urlImg": "img/6.JPG",
-      "descripcion": "Magníficamente editadas, cuatro de las novelas del escritor vallecaucano, autor de Cóndores no entierran todos los días. Tenemos entonces: La tara del papa, El titiritero, Comandante Paraíso y El último gamonal. Una valiosa muestra del talento narrativo de este escritor. ",
       "autor": "GUSTAVO ALVAREZ GARDEAZABAL",
       "editorial": "UVALLE",
-      "precio": "34000"
+      "precio": "34000",
+      "id": "6"
     },
     {
       "id": "7",
