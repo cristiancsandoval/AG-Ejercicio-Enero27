@@ -56,16 +56,16 @@ const updateLibros = () => {
 let modificar = document.getElementById("modificar")
 modificar.addEventListener("click",async () => {
     const datosIngresados = captureData();
-    const {url,nombre,correo,descripcion} = datosIngresados;
-    if(url ==="" , nombre === "", correo === "", descripcion === "" ) //Preguntar por las comas en el if
+    const {titulo,descripcion,urlImg,precio} = datosIngresados;
+    if(titulo ==="" , descripcion === "", urlImg === "", precio === "" ) //Preguntar por las comas en el if
     {
         alert("Llenar todos los campos")
     } else {
         const id = document.getElementById("inputId").value;
-        console.log('dataMod', dataMod);
+        console.log(datosIngresados)
         await fetch(endpoint+id,{
             method:"PUT",
-            body : JSON.stringify(dataMod),
+            body : JSON.stringify(datosIngresados),
             headers:{
                 "Content-Type" :"application/json; charset=utf-8"
             }
