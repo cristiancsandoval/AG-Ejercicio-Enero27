@@ -5,10 +5,10 @@ const getLibros = async () => {
   const data = await fetch(endpoint);
   const libros = await data.json();
   
-  console.log(libros.users);
+  console.log(libros);
   
 
-  libros.users.forEach((libro) => {
+  libros.forEach((libro) => {
     const { id, titulo, urlImg, descripcion, precio } = libro;
     console.log(titulo);
     contenedor.innerHTML += `
