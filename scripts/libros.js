@@ -16,7 +16,7 @@ const getLibros = async () => {
         <img src="${urlImg}" class="card-img-top img-fluid" alt="...">
         <div class="card-body">
           <h5 class="card-title">${titulo}</h5>
-          <p class="card-text">${precio}</p>
+          <p class="card-text"><span>$${precio}</span></p>
           <p class="card-text">${descripcion}</p>
           <a href="#" id=${id} class="btn btn-danger">Eliminar</a>
         </div>
@@ -74,6 +74,37 @@ modificar.addEventListener("click",async () => {
 })
 
 // buscarPorTitulo
+let btnBuscar = document.getElementById('buscar');
+
+btnBuscar.addEventListener('click', async()=>{
+
+    let busqueda = captureData().titulo;
+    
+    const resp = await fetch(endpoint);
+    const data = await resp.json();
+
+    const buscado = data.find( 
+        (u) => u.titulo.toLocaleLowerCase() === busqueda.toLocaleLowerCase()
+    )
+
+    if ( buscado !== undefined){
+
+        const { titulo, descripcion, urlImg, autor, editorial, precio, id } = buscado;
+        
+        document.getElementById("titulo").value = titulo
+        document.getElementById("descripcion").value = descripcion;
+        document.getElementById("urlImg").value =urlImg;
+        document.getElementById("autor").value = autor;
+        document.getElementById("editorial").value = editorial;
+        document.getElementById("precio").value = precio;
+        document.getElementById("inputId").value = id;
+        
+
+    } else{
+        alert('Libro no encontrado');
+    }
+
+})
 
 // Funciones de ayuda
 const captureData = () => {
